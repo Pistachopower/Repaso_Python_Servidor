@@ -5,7 +5,7 @@ derivadas, Perro y Gato, que hereden de Animal y sobrescriban
 el método hablar para imprimir mensajes diferentes. 
 """
 #definimos clase padre animal
-class Animal:
+class Animal():
    #creamos el constructor con un atributo
     def __init__(self, nombre):
        self.nombre= nombre
