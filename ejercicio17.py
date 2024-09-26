@@ -28,9 +28,50 @@ class FiguraGeometrica():
      
     #método area que calcule el área de la figura
     def calculaArea(self):
-        pass
+        resultado= (self.ancho * self.altura)  / 2
+        return resultado
+        
+        
+
+class Rectangulo( FiguraGeometrica):
+    def __init__(self, ancho, altura):
+       super().__init__(ancho, altura) #con la palabra reservada super obtenemos los atributos y métodos de la clase padre
+         
+
+    #sobreescribimos el método str de la clase padre animal por el propio de la clase
+    def __str__(self):
+       return f"Ancho: {self.ancho}, Altura: {self.altura}"
+
+
+    def calculaRectangulo(self):
+        resultado= (self.ancho * self.altura)  / 2
+        return resultado
+    
+
+class Triangulo( FiguraGeometrica):
+    def __init__(self, ancho, altura):
+       super().__init__(ancho, altura) #con la palabra reservada super obtenemos los atributos y métodos de la clase padre
+         
+
+    #sobreescribimos el método str de la clase padre animal por el propio de la clase
+    def __str__(self):
+       return f"Ancho: {self.ancho}, Altura: {self.altura}"
+
+
+    def calculaTriangulo(self):
+        resultado= (self.ancho * self.altura)  / 2
+        return resultado
+     
+    
+
      
 #instanciamos al objeto pasando por parametro los valores
 figuraG= FiguraGeometrica(1.5, 6.5)
+rectangulo= Rectangulo(5.6,6)
+triangulo= Triangulo(5,5)
 
-print(figuraG)
+print(figuraG.calculaArea())
+
+print(rectangulo.calculaRectangulo())
+
+print(triangulo.calculaTriangulo())
