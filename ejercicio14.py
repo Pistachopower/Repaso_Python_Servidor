@@ -3,7 +3,7 @@ Crea una clase llamada CuentaBancaria con atributos titular y saldo.
 Agrega métodos para depositar y retirar dinero de la cuenta. 
 """
 #definimos clase CuentaBancaria
-class CuentaBancaria:
+class CuentaBancaria():
    #creamos el constructor
     def __init__(self, titular, saldo):
        #definimos los atributos del constructor

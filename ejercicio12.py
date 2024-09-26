@@ -4,7 +4,7 @@ Agrega un método para calcular el área del rectángulo y otro para
 calcular su perímetro. 
 """
 
-class Rectangulo:
+class Rectangulo():
    #creamos el constructor
     def __init__(self, ancho, altura):
        #definimos los atributos del constructor

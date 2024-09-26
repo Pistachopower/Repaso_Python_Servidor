@@ -3,7 +3,7 @@ Crea una clase llamada Persona con atributos nombre y edad.
 Luego, crea un objeto de tipo Persona e imprime sus atributos.
 """
 #definimos clase persona
-class Persona:
+class Persona():
     #creamos el constructor
     def __init__(self, nombre, edad):
         #definimos los atributos del constructor
